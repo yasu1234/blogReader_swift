@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		57E883615024B820F96A583D /* Pods_blogReader_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128010B8DB107B4BE8D757CA /* Pods_blogReader_swift.framework */; };
 		D20246A32466DECB00ABB64C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20246A22466DECB00ABB64C /* AppDelegate.swift */; };
 		D20246A52466DECB00ABB64C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20246A42466DECB00ABB64C /* SceneDelegate.swift */; };
-		D20246A72466DECB00ABB64C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20246A62466DECB00ABB64C /* ViewController.swift */; };
+		D20246A72466DECB00ABB64C /* BlogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20246A62466DECB00ABB64C /* BlogListViewController.swift */; };
 		D20246AA2466DECB00ABB64C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20246A82466DECB00ABB64C /* Main.storyboard */; };
 		D20246AC2466DECC00ABB64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20246AB2466DECC00ABB64C /* Assets.xcassets */; };
 		D20246AF2466DECC00ABB64C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20246AD2466DECC00ABB64C /* LaunchScreen.storyboard */; };
@@ -49,7 +49,7 @@
 		D202469F2466DECB00ABB64C /* blogReader_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blogReader_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20246A22466DECB00ABB64C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D20246A42466DECB00ABB64C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D20246A62466DECB00ABB64C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D20246A62466DECB00ABB64C /* BlogListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListViewController.swift; sourceTree = "<group>"; };
 		D20246A92466DECB00ABB64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D20246AB2466DECC00ABB64C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D20246AE2466DECC00ABB64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,7 +111,6 @@
 				53AFF91C679D7301A0BF92C1 /* Pods-blogReader_swiftTests.debug.xcconfig */,
 				6857E3375C38C9CDFD7870E6 /* Pods-blogReader_swiftTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,9 +139,10 @@
 		D20246A12466DECB00ABB64C /* blogReader_swift */ = {
 			isa = PBXGroup;
 			children = (
+				D2AE14DA247A944700640A7E /* Model */,
 				D20246A22466DECB00ABB64C /* AppDelegate.swift */,
 				D20246A42466DECB00ABB64C /* SceneDelegate.swift */,
-				D20246A62466DECB00ABB64C /* ViewController.swift */,
+				D20246A62466DECB00ABB64C /* BlogListViewController.swift */,
 				D20246A82466DECB00ABB64C /* Main.storyboard */,
 				D20246AB2466DECC00ABB64C /* Assets.xcassets */,
 				D20246AD2466DECC00ABB64C /* LaunchScreen.storyboard */,
@@ -167,6 +167,13 @@
 				D20246C62466DECC00ABB64C /* Info.plist */,
 			);
 			path = blogReader_swiftUITests;
+			sourceTree = "<group>";
+		};
+		D2AE14DA247A944700640A7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,7 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20246A72466DECB00ABB64C /* ViewController.swift in Sources */,
+				D20246A72466DECB00ABB64C /* BlogListViewController.swift in Sources */,
 				D20246A32466DECB00ABB64C /* AppDelegate.swift in Sources */,
 				D20246A52466DECB00ABB64C /* SceneDelegate.swift in Sources */,
 			);
