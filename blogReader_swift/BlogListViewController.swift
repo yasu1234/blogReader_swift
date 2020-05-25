@@ -14,9 +14,6 @@ class BlogListViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.delegate = self
-        
     }
 }
 
