@@ -20,6 +20,7 @@ class BlogListViewController {
 
 extension BlogListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Blog.getBlogCount()
     }
 }
 

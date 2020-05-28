@@ -20,4 +20,12 @@ class Blog: Object {
     override static func primaryKey() -> String? {
         return "id"
     }
+    
+    func getBlogCount() -> Int {
+        let realm = try! Realm()
+        let results = realm.objects(Blog.self)
+        return results.count
+    }
+    
+    
 }
