@@ -45,6 +45,11 @@ extension BlogListViewController: UITableViewDelegate {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "articleListViewController", sender: nil)
+    }
 }
 
 extension BlogListViewController: UITableViewDataSource {
