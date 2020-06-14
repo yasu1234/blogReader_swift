@@ -150,5 +150,60 @@
             </objects>
             <point key="canvasLocation" x="863.768115942029" y="137.94642857142856"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="kbC-JW-Rso">
+            <objects>
+                <viewController id="wJ9-9g-Gpp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tCP-DZ-A7K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL入力欄" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oK-GX-iII">
+                                <rect key="frame" x="20" y="154.5" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lJh-tF-Twj">
+                                <rect key="frame" x="20" y="205.5" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUU-Ft-XKe">
+                                <rect key="frame" x="138" y="549.5" width="138" height="30"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URLを入力して保存ボタンを押してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2q-J1-K7q">
+                                <rect key="frame" x="20" y="74" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lJh-tF-Twj" firstAttribute="leading" secondItem="mWy-Vq-EK8" secondAttribute="leading" constant="20" id="02X-36-d03"/>
+                            <constraint firstItem="mWy-Vq-EK8" firstAttribute="trailing" secondItem="lJh-tF-Twj" secondAttribute="trailing" constant="20" id="AaO-BC-hMp"/>
+                            <constraint firstItem="9oK-GX-iII" firstAttribute="top" secondItem="S2q-J1-K7q" secondAttribute="bottom" constant="60" id="NXS-RG-445"/>
+                            <constraint firstItem="9oK-GX-iII" firstAttribute="leading" secondItem="mWy-Vq-EK8" secondAttribute="leading" constant="20" id="VTl-8L-sXh"/>
+                            <constraint firstItem="mWy-Vq-EK8" firstAttribute="trailing" secondItem="iUU-Ft-XKe" secondAttribute="trailing" constant="138" id="VUm-SK-ncr"/>
+                            <constraint firstItem="mWy-Vq-EK8" firstAttribute="trailing" secondItem="S2q-J1-K7q" secondAttribute="trailing" constant="20" id="Vy3-iJ-juO"/>
+                            <constraint firstItem="lJh-tF-Twj" firstAttribute="top" secondItem="9oK-GX-iII" secondAttribute="bottom" constant="30" id="bRn-va-U5K"/>
+                            <constraint firstItem="iUU-Ft-XKe" firstAttribute="leading" secondItem="mWy-Vq-EK8" secondAttribute="leading" constant="138" id="l31-1N-BJF"/>
+                            <constraint firstItem="S2q-J1-K7q" firstAttribute="top" secondItem="mWy-Vq-EK8" secondAttribute="top" constant="30" id="ryp-i4-5Vj"/>
+                            <constraint firstItem="S2q-J1-K7q" firstAttribute="leading" secondItem="mWy-Vq-EK8" secondAttribute="leading" constant="20" id="tBP-Va-bqR"/>
+                            <constraint firstItem="mWy-Vq-EK8" firstAttribute="trailing" secondItem="9oK-GX-iII" secondAttribute="trailing" constant="20" id="xgY-UK-dd2"/>
+                            <constraint firstItem="iUU-Ft-XKe" firstAttribute="top" secondItem="lJh-tF-Twj" secondAttribute="bottom" constant="310" id="xyl-WS-0qF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mWy-Vq-EK8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7pW-ol-kfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863.768115942029" y="784.15178571428567"/>
+        </scene>
     </scenes>
 </document>
