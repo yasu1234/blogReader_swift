@@ -20,6 +20,7 @@
 		D2D557922484831800C092B1 /* BlogListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D557912484831800C092B1 /* BlogListViewCell.swift */; };
 		D2D55794248566FE00C092B1 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D55793248566FE00C092B1 /* ArticleListViewController.swift */; };
 		D2D557962485684A00C092B1 /* BlogDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D557952485684A00C092B1 /* BlogDetail.swift */; };
+		D2D5579824A85D3900C092B1 /* BlogRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D5579724A85D3900C092B1 /* BlogRegisterViewController.swift */; };
 		DD20CB0EB26419D54D9276FE /* Pods_blogReader_swift_blogReader_swiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBA5FDBC8D773F1316961AF /* Pods_blogReader_swift_blogReader_swiftUITests.framework */; };
 		E270538CA8E63036724277DD /* Pods_blogReader_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4C656B018F599C7AEAC489 /* Pods_blogReader_swiftTests.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		D2D557912484831800C092B1 /* BlogListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListViewCell.swift; sourceTree = "<group>"; };
 		D2D55793248566FE00C092B1 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		D2D557952485684A00C092B1 /* BlogDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogDetail.swift; sourceTree = "<group>"; };
+		D2D5579724A85D3900C092B1 /* BlogRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogRegisterViewController.swift; sourceTree = "<group>"; };
 		E86B06DD64EC2316A2368C28 /* Pods-blogReader_swift-blogReader_swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blogReader_swift-blogReader_swiftUITests.release.xcconfig"; path = "Target Support Files/Pods-blogReader_swift-blogReader_swiftUITests/Pods-blogReader_swift-blogReader_swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +194,7 @@
 			children = (
 				D20246A62466DECB00ABB64C /* BlogListViewController.swift */,
 				D2D55793248566FE00C092B1 /* ArticleListViewController.swift */,
+				D2D5579724A85D3900C092B1 /* BlogRegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				D20246A32466DECB00ABB64C /* AppDelegate.swift in Sources */,
 				D2D55794248566FE00C092B1 /* ArticleListViewController.swift in Sources */,
 				D20246A52466DECB00ABB64C /* SceneDelegate.swift in Sources */,
+				D2D5579824A85D3900C092B1 /* BlogRegisterViewController.swift in Sources */,
 				D2D557922484831800C092B1 /* BlogListViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

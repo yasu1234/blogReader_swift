@@ -167,10 +167,10 @@
             </objects>
             <point key="canvasLocation" x="863.768115942029" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Blog Register View Controller-->
         <scene sceneID="kbC-JW-Rso">
             <objects>
-                <viewController id="wJ9-9g-Gpp" sceneMemberID="viewController">
+                <viewController id="wJ9-9g-Gpp" customClass="BlogRegisterViewController" customModule="blogReader_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tCP-DZ-A7K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,6 +192,9 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapRegister:" destination="wJ9-9g-Gpp" eventType="touchUpInside" id="2k9-He-0oa"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URLを入力して保存ボタンを押してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2q-J1-K7q">
                                 <rect key="frame" x="20" y="74" width="374" height="20.5"/>
@@ -217,6 +220,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mWy-Vq-EK8"/>
                     </view>
+                    <connections>
+                        <outlet property="urlInputTextField" destination="lJh-tF-Twj" id="HMe-yH-DFM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pW-ol-kfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
