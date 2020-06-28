@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GUq-04-k6M">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="768"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="61" id="Cwy-HG-fIP" customClass="BlogListViewCell" customModule="blogReader_swift" customModuleProvider="target">
@@ -67,13 +67,30 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="AjL-vR-B67"/>
                                 </connections>
                             </tableView>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DxH-N7-pCB">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="avY-Bb-21e"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="ブログ一覧" image="book" catalog="system" id="djL-ot-lAR"/>
+                                    <tabBarItem title="ブログ登録" id="7tQ-iJ-PmQ"/>
+                                    <tabBarItem title="設定" id="fUn-Hz-ZbA">
+                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                                    </tabBarItem>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="GUq-04-k6M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Dm1-BK-zZ4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DxH-N7-pCB" secondAttribute="bottom" id="XOz-nn-9Yo"/>
+                            <constraint firstItem="DxH-N7-pCB" firstAttribute="top" secondItem="GUq-04-k6M" secondAttribute="bottom" id="ZGT-YG-D97"/>
                             <constraint firstItem="GUq-04-k6M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZTC-ez-JDe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GUq-04-k6M" secondAttribute="bottom" id="jx6-R1-DtW"/>
                             <constraint firstItem="GUq-04-k6M" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mmX-YM-lWl"/>
+                            <constraint firstItem="DxH-N7-pCB" firstAttribute="trailing" secondItem="GUq-04-k6M" secondAttribute="trailing" id="ugt-pu-Csz"/>
+                            <constraint firstItem="DxH-N7-pCB" firstAttribute="leading" secondItem="GUq-04-k6M" secondAttribute="leading" id="xg1-5m-xwq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -150,10 +167,10 @@
             </objects>
             <point key="canvasLocation" x="863.768115942029" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Blog Register View Controller-->
         <scene sceneID="kbC-JW-Rso">
             <objects>
-                <viewController id="wJ9-9g-Gpp" sceneMemberID="viewController">
+                <viewController id="wJ9-9g-Gpp" customClass="BlogRegisterViewController" customModule="blogReader_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tCP-DZ-A7K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,6 +192,9 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapRegister:" destination="wJ9-9g-Gpp" eventType="touchUpInside" id="2k9-He-0oa"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URLを入力して保存ボタンを押してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2q-J1-K7q">
                                 <rect key="frame" x="20" y="74" width="374" height="20.5"/>
@@ -200,10 +220,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mWy-Vq-EK8"/>
                     </view>
+                    <connections>
+                        <outlet property="urlInputTextField" destination="lJh-tF-Twj" id="HMe-yH-DFM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pW-ol-kfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="863.768115942029" y="784.15178571428567"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="book" catalog="system" width="64" height="50"/>
+    </resources>
 </document>
