@@ -1,4 +1,6 @@
 PODS:
+  - Alamofire (5.2.1)
+  - Kanna (5.2.2)
   - Realm (4.3.2):
     - Realm/Headers (= 4.3.2)
   - Realm/Headers (4.3.2)
@@ -6,17 +8,23 @@ PODS:
     - Realm (= 4.3.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - Kanna (~> 5.2.2)
   - RealmSwift
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - Kanna
     - Realm
     - RealmSwift
 
 SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Kanna: 2c4eddaaa4bfb9a1ed19e53c0b3d42ef02838046
   Realm: 5e92902e2875dff4bb0fd02f67bb737c3d5db2bc
   RealmSwift: 9a360fc7bae04fc2e308a34fbd899d5faa2d6b22
 
-PODFILE CHECKSUM: 7abf5da47ce6ee4f10ad9efd4b4bebb77c5300f1
+PODFILE CHECKSUM: a02868d067fc8200cf840856a5b2f73153f38784
 
 COCOAPODS: 1.8.4
